@@ -38,7 +38,17 @@ PORT     STATE SERVICE
 
 🔐 Security Risk Analysis
 
+Oldest version of dnsmasq like 2.45 may have vulnerablties. Attackers may exploit these to:
+	- Perform DNS cache poisoning
+	- Execute remote code
+	- Leak system information
+	- If port 53 is exposed to the public internet, it increases the risk.
 
+COMMAN OPEN PORT RISK ANALYSIS:
+	 - Someone might get in without permission ( unauthorized access )
+	 - You might be giving away info without realising it like ( sensitive data's )
+	 - Old or Weak software might be running if a service on a open port hasn't update properly
+it might be exposed easily by the attackers
 
 
 🧪 Disclaimer:
