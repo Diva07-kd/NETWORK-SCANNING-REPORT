@@ -1,0 +1,25 @@
+NMAP POTENTIAL SECURITY RISK ANALYSIS:
+
+	-PORT - 53/TCP 
+	-SERVICE - DOMAIN 
+	-SERVICE VERSION - dnsmasq 2.45
+
+SCAN SUMMARY:
+	* Nmap Scan perform: TCP SYS scan and services version detected.
+	* total hosts scan: 256
+	* Live Hosts: 2
+	* Notable open port found: port 53/TCP on IP 10.81.197.93
+	* Port 53 - Domain name system
+
+SECURITY RISKS IN OBTAINED ANS:
+	Oldest version of dnsmasq like 2.45 may have vulnerablties. Attackers may exploit these to:
+	- Perform DNS cache poisoning
+	- Execute remote code
+	- Leak system information
+	- If port 53 is exposed to the public internet, it increases the risk.
+
+COMMAN OPEN PORT RISK ANALYSIS:
+	 - Someone might get in without permission ( unauthorized access )
+	 - You might be giving away info without realising it like ( sensitive data's )
+	 - Old or Weak software might be running if a service on a open port hasn't update properly
+it might be exposed easily by the attackers.

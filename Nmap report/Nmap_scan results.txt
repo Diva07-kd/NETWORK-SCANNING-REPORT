@@ -1,0 +1,21 @@
+NMAP SCAN RESULT:
+
+QUESTION:
+	PERFORM A TCP SYS SCAN ON YOUR LOCAL IP RANGE USNG NMAP. NOTE THE ACTIE HOSTS
+OPEN PORTS , AND SERVICES RUNNING. 
+
+OBTAINED ANS:
+	 		NMAP TCP SYS SCAN REPORT 
+
+SCAN DATE: August 4, 2025
+SCAN COMMAND USED:
+	* ( sudo nmap -sS <target ip> )
+	* ( sudo nmap -SV <target ip> )
+TARGET IP ADDRESS:
+	10.81.197.101/24
+DESCRIPTION:
+	This scan was performed to identify lie host , open port , and running services within the 
+local network using a TCT SYS scan.
+	* OPEN PORT - 53/TCP
+	* STATE - OPEN 
+	* VERSION - dnsmasq 2.51
