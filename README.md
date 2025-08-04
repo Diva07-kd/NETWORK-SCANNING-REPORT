@@ -23,7 +23,7 @@ This repository contains the results and analysis of an `nmap` scan conducted on
 
 - Operating System: Linux
 - Nmap version 7.90 or higher recommended
-sudo nmap -sS -T4 -Pn -v 127.0.0.1
+sudo nmap -sS -T4 -Pn -v 10.81.197.101
 
   10.81.197.101	Target IP (localhost)
 
