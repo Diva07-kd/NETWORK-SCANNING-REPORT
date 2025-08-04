@@ -25,12 +25,6 @@ This repository contains the results and analysis of an `nmap` scan conducted on
 - Nmap version 7.90 or higher recommended
 sudo nmap -sS -T4 -Pn -v 127.0.0.1
 
-Explanation:
-Option	Description
--sS	TCP SYN scan (half-open scan)
--T4	Set aggressive timing template
--Pn	Skip host discovery (assumes host is up)
--v	Verbose output
   10.81.197.101	Target IP (localhost)
 
 📄 Scan Results (Example Output)
