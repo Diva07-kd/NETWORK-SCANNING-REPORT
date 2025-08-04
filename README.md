@@ -39,12 +39,24 @@ PORT     STATE SERVICE
 🔐 Security Risk Analysis
 
 Port	Service	Description	Potential Risk
+
+
 22	SSH	Secure Shell login	Brute-force attacks if weak credentials; check for auth keys
+
+
 80	HTTP	Web server	Unpatched web apps can be vulnerable to RCE, XSS, SQLi
+
+
 631	IPP	Internet Printing Protocol	May leak printer info; rarely needed on production servers
+
+
 5432	PostgreSQL	Database server	Open DB port can expose data; ensure password enforcement
 5900	VNC	Virtual Network Computing	Vulnerable to MITM or brute-force; use encryption/tunneling
+
+
 6379	Redis	In-memory DB, cache	Redis has no auth by default; should not be exposed
 
-🧪 Disclaimer
+
+🧪 Disclaimer:
+
 This scan was conducted in a controlled local environment for educational and research purposes. Do not scan external networks without proper authorization.
