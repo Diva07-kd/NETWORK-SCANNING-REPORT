@@ -23,3 +23,34 @@ This repository contains the results and analysis of an `nmap` scan conducted on
 
 - Operating System: Linux
 - Nmap version 7.90 or higher recommended
+sudo nmap -sS -T4 -Pn -v 127.0.0.1
+
+Explanation:
+Option	Description
+-sS	TCP SYN scan (half-open scan)
+-T4	Set aggressive timing template
+-Pn	Skip host discovery (assumes host is up)
+-v	Verbose output
+  10.81.197.101	Target IP (localhost)
+
+📄 Scan Results (Example Output)
+text
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-08-04 10:00 UTC
+Nmap scan report for localhost (10.81.197.101/24)
+Host is up (0.00013s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+53/tcp   open  DOMAIN
+
+🔐 Security Risk Analysis
+
+Port	Service	Description	Potential Risk
+22	SSH	Secure Shell login	Brute-force attacks if weak credentials; check for auth keys
+80	HTTP	Web server	Unpatched web apps can be vulnerable to RCE, XSS, SQLi
+631	IPP	Internet Printing Protocol	May leak printer info; rarely needed on production servers
+5432	PostgreSQL	Database server	Open DB port can expose data; ensure password enforcement
+5900	VNC	Virtual Network Computing	Vulnerable to MITM or brute-force; use encryption/tunneling
+6379	Redis	In-memory DB, cache	Redis has no auth by default; should not be exposed
+
+🧪 Disclaimer
+This scan was conducted in a controlled local environment for educational and research purposes. Do not scan external networks without proper authorization.
